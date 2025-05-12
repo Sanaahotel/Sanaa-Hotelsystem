@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Adminbereich – Sanaa Hotelsystem</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #bfa145;
+    }
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin: 20px 0 5px;
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 30px;
+      background-color: #bfa145;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Adminbereich – Sanaa Hotelsystem</h1>
+  <form onsubmit="saveData(); return false;">
+    <label for="fruehstueck">Frühstückszeiten:</label>
+    <textarea id="fruehstueck" placeholder="z. B. täglich von 7:00 – 10:30 Uhr"></textarea>
+
+    <label for="wlan">WLAN-Informationen:</label>
+    <textarea id="wlan" placeholder="z. B. Netzwerk: Hotel-WiFi, Passwort: welcome123"></textarea>
+
+    <label for="rezeption">Rezeption & Kontakt:</label>
+    <textarea id="rezeption" placeholder="z. B. Rezeption 24h besetzt – Tel: 030 1234567"></textarea>
+
+    <button type="submit">Speichern</button>
+  </form>
+
+  <script>
+    function saveData() {
+      alert("Die Eingaben wurden gespeichert (Simulationsmodus).");
+    }
+  </script>
+</body>
+</html>

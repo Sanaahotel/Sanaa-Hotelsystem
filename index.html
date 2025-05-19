@@ -3,83 +3,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanaa Hotelsystem</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #111;
       color: #f5f5f5;
     }
     header {
       background-color: #000;
-      padding: 20px;
       text-align: center;
-      border-bottom: 1px solid #333;
+      padding: 2rem 1rem;
     }
     header h1 {
-      margin: 0;
       font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      color: #d4af37;
+      color: gold;
+      font-size: 2.5rem;
+      margin: 0;
     }
-    .subline {
-      font-size: 1em;
-      color: #aaa;
+    header h2 {
+      font-family: 'Playfair Display', serif;
+      color: gold;
+      font-size: 1.75rem;
+      margin: 0.2rem 0 0.5rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #ccc;
     }
     main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 700px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
-    .section {
-      margin-bottom: 40px;
+    section {
+      margin-bottom: 2rem;
     }
-    .button {
+    h3 {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .btn {
       display: inline-block;
-      background-color: #d4af37;
-      color: #000;
-      padding: 12px 20px;
+      background-color: gold;
+      color: black;
+      padding: 0.7rem 1.2rem;
       border-radius: 5px;
-      font-weight: bold;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
     }
-    footer {
+    .btn:hover {
+      background-color: #e6c200;
+    }
+    .chatbox-placeholder {
+      background-color: #222;
+      border: 1px dashed #555;
+      padding: 2rem;
+      border-radius: 10px;
       text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 0.9em;
+      font-style: italic;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SANAA HOTELSYSTEM</h1>
-    <div class="subline">Digitaler Luxus Concierge mit KI-Technologie</div>
+    <h1>SANAA</h1>
+    <h2>HOTELSYSTEM</h2>
+    <p>Digitaler Luxus Concierge mit KI-Technologie</p>
   </header>
   <main>
-    <div class="section">
-      <h2>Willkommen</h2>
+    <section>
+      <h3>Willkommen</h3>
       <p>Unser intelligenter Hotelassistent hilft Ihnen rund um die Uhr bei Fragen, Empfehlungen oder Buchungen – in mehreren Sprachen und mit Sprachausgabe.</p>
-      <a class="button" href="#chat">Zum Chat</a>
-    </div>
-    <div class="section">
-      <h2>Ihre Vorteile</h2>
-      <ul>
-        <li>24/7 digitale Rezeption</li>
-        <li>Mehrsprachige Kommunikation</li>
-        <li>Buchungsanfragen direkt per Sprache</li>
-        <li>Luxuriöses Design für gehobene Hotels</li>
-      </ul>
-    </div>
-    <div class="section" id="chat">
-      <h2>Live Chat</h2>
-      <p><em>(Hier wird der Chatbot oder Sprachassistent integriert.)</em></p>
-    </div>
+      <a href="#chat" class="btn">Zum Chat</a>
+    </section><section>
+  <h3>Ihre Vorteile</h3>
+  <ul>
+    <li>24/7 digitale Rezeption</li>
+    <li>Mehrsprachige Kommunikation</li>
+    <li>Buchungsanfragen direkt per Sprache</li>
+    <li>Luxuriöses Design für gehobene Hotels</li>
+  </ul>
+</section>
+
+<section id="chat">
+  <h3>Live Chat</h3>
+  <div class="chatbox-placeholder">
+    (Hier wird der Chatbot oder Sprachassistent integriert.)
+  </div>
+</section>
+
   </main>
-  <footer>
-    &copy; 2025 Sanaa Hotelsystem. Alle Rechte vorbehalten.
-  </footer>
 </body>
 </html>
